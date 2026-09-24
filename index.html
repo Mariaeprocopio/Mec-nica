@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manutenção</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      table,
+      tr,
+      td,
+      th {
+        border-collapse: collapse;
+        border: 2px solid green;
+        padding: 4px;
+      }
+    </style>
+  </head>
+  <body>
+   <button onclick="window.location.replace('login.html')">Sair</button>
+    <form>
+      <input
+        type="text"
+        id="data_ent"
+        placeholder="Data de entrada"
+        required
+      />
+      <input type="text" id="data_saida" placeholder="Data de saida" required />
+      <input type="text" id="previsao_saida" placeholder="Previsao de saida" required />
+      <input type="text" id="situacao" placeholder="Situação" required />
+      <input type="text" id="tipo_serviço" placeholder="Tipo de serviço" />
+      <input type="text" id="valor" placeholder="Valor" />
+      <textarea
+        name="descricao_problema"
+        id="descricao_problema"
+        placeholder="Descreva o problema"
+      ></textarea>
+    
+      <button type="submit">Cadastrar</button>
+    </form>
+    
+    <br />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Data de entrada</th>
+          <th>Data de saída</th>
+          <th>Previsão de saída</th>
+          <th>Situação</th>
+          <th>Descrição problema...</th>
+          <th>Tipo de serviço</th>
+          <th>Valor</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="./script.js"></script>
+  </body>
+</html>
